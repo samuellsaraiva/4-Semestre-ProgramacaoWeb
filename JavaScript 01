@@ -1,1 +1,114 @@
+<!-- Programa Nº01 -->
+<!DOCTYPE html>
+<html>
+<head>
+<tittle>...</title>
+<meta>
+<meta>
+</head>
 
+<body>
+
+<script language = "javascript">
+
+/* Objetivo */
+/* Definição de Variáveis */
+/* Entrada de Dados */
+/* Saída de Dados */
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- Programa Nº02 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>s01_Estrutura2.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+<meta charset="utf-8"/>
+</head>
+<body>
+	<h3>Programa de Boas Vindas!</h3>
+	<script language="JavaScript">
+
+<!--
+	/* Objetivo: Capturar o nome do usuário e apresentar uma saudação personalizada
+	Definir as variáveis com prefixo js_
+	Elementos de Entrada: método prompt do objeto window
+	Elementos de Saída: método write do objeto document */
+	
+	/* Definição de variáveis */
+	var js_nome;
+	
+	/*Entrada de Dados*/
+	js_nome = window.prompt('Enter your name:', 'Type your name in this box');
+	
+	/*Saída de Dados */
+	document.write('Olá, ' + js_nome + '! Seja bem vindo.');
+	// mensagem de saudação personalizada
+
+//-->
+</script>
+</body>
+</html>
+
+
+
+<!-- Programa Nº03 -->
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>js01_Concatenacao.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta charset="utf-8"/> 
+</head>
+
+<body>
+
+<h3>Programa de incentivo!</h3>
+
+<!-- A definição do furmulário entra antes do script-->
+
+<form name='FormConcatena' action=' ' method='post'>
+	Digite seu nome: <input type ='text' name='f_nome' /><p></p>
+	Digite seu sobrenome: <input type = 'text' name = 'f_sobrenome' /><p></p>
+
+	<input type = 'button' name = 'btn_concatena' value = 'Concatenar' onclick = 'concatena()'/>
+	<input type = 'reset' name = 'btn_cancela' value = 'Cancelar' />
+</form>
+
+<script language="javascript">
+
+<!--Objetivo: Capturar nome e sobrenome, concatenar os campos e apresentar uma saudação personalizada -->
+
+	/*Definição de Variáveis*/
+	var js_nome;
+	var js_sobrenome;
+	var js_completo;
+
+function concatena(){
+	/* Entrada de Dados */
+	js_nome = document.FormConcatena.f_nome.value;
+	js_sobrenome = document.FormConcatena.f_sobrenome.value;
+
+		
+<!--Processamento de dados-->
+	js_completo = js_nome + ' ' + js_sobrenome;
+
+<!--Saída de dados-->
+	window.alert('Ol\u00e1 ' + js_completo);
+
+}
+
+</script>
+</body>
+</html>
