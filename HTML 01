@@ -1,1 +1,274 @@
+<!-- HTML - Elementos: Corpo, Cabeçalho e Título -->
+<!-- .Um elemento tem 3 partes: uma tag de abertura, um contúdo do elemento e -->
+<!-- um fecho; -->
+<!-- 1) <p> - a tag que abre o parágrafo -->
+<!-- 2) Elements content - o parágrafo em si -->
+<!-- 3) </p> - a tag fecho; -->
 
+<html>
+	<head>
+		<title>My first webpage</title>
+	<head>
+
+	<body>
+		Hello, World! We'll put some contents here soon.
+	</body>
+</html>
+
+
+<!-- HTML - Tags -->
+
+<html>
+	<openingtag>Content</closingtag>
+	
+	<p>Paragraph</p>
+</html>
+
+
+<body>
+	
+	<h2>Title</h2>
+	<i>italic</i>
+	<b>bold</b>
+
+</body>
+
+
+<!-- há algumas tags que não precisam de fechamento, 
+como por exemplo a tag da "quebra de linha" -->
+
+<br/>
+
+
+<img src="../img/image.jpg" />
+<br />
+<input type="text" size="12" />
+
+
+<!-- HTML - Atributos -->
+
+<!-- Os atributos são usados para personalizar tags. O que isso significa? De alguma maneira,
+algum dia você quer redimencionar uma imagem ou tabela ou mudar a cor da fonte. Tudo isso é
+possível com a ajuda de atibutos. 
+Atributos são postos entre parenteses (<>) de uma tag aberta. 
+
+Os Atributos "classe" e "id" em HTML
+A ideia é que quando você quer colocar uma classe de tahs para serem usadas depois com a
+ajuda de CSS, você pode fazer a diferença entre duas tags identicas, mas com atributos
+diferentes -->
+<p id = "italicparagraph"> Paragraph Type 1, italic </p>
+<p id = "boldparagraph"> Paragraph Type 2, bold </p>
+
+
+<!-- O Atributo "name" 
+"name" é um pouco diferente de "id" e "classe". Se você der o nome a um elemento, ele torna-se
+um script varipavel para JavaScript, ASP e PHP. Uma coisa que é muito encontrada em formulários
+e outros arquivos de texto interativos -->
+<input type = "text" name = "TextField"/>
+
+
+<!-- O Atributo "título"
+Esse atributo raramente é usado. Ele adiciona um título (um pop-up) para todo elemento do
+conteúdo. Esse atributo não deve ser esquecido. Você pode nomear quase tudo da forma que
+quiser. A visualização aparece quando você precisa de parar o mouse por alguns segundos sobre
+o conteúdo. -->
+<h2 title = "I'm a tittle attribute!!"> Some Title</h2>
+
+
+<!-- O Atributo "alinhamento"
+Se você que alinhar alguns elementos da sua página de uma maneira diferente, então você tem a
+sua disposição o atributo "align". Você pode alinhar a esquerda, a direita ou no centro da página
+quase qualquer elemento. Os elementos default serão alinhados a esquerda, a não ser quando
+especificado outro alinhamento. -->
+<h2 align = "center"> Centered Title </h2>
+<h2 align = "left"> Left-aligned </h2>
+<h2 align = "right"> Right-aligned </h2>
+
+
+<!-- O Atributo "parágrafo"
+O parágrafo é o elemento base no texto editado. A tag para um parágrafo é <p>.
+Ele coloca uma linha vazia acima e uma abaixo do texto para fazè-lo evidente, e o navegador o
+terá pelo que ele é. -->
+<p> The paragraph is the basis of the edited text. The tag for the paragraph is  &lt;p&gt;.</p>
+<p> It places an empty line above and below the text to make it evident and the browser will have it for what he is. </p>
+
+
+<!-- O Atributo "parágrafo justificado"
+Parágrafos podem ser editados quase da mesma forma fácil que em um editor de texto. O
+próximo exemplo será feito com a ajuda do atributo justificado -->
+<p align = "justify"> The paragraph is the basis of the edited text. The tag for the paragraph is <p>. It places an empty line above and below the text to make it evident and the browser will have it for what he is. </p>
+
+
+<!-- O Atributo "parágrafo centrado" -->
+<p align = "center"> The paragraph is the basis of the edited text. The paragraph <br/>is the basis of the edited text. The tag for the paragraph is &lt;p&gt; . <br/> It places an empty line above and below the text to make it evident and the browser will have it for what he is. </p>
+
+
+<!-- O Atributo "parágrafo alinhado à direita" -->
+<p align = "right"> The paragraph is the basis of the edited text. The paragraph <br/>is the basis of the edited text. The tag for the paragraph is &lt;p&gt; . <br/> It places an empty line above and below the text to make it evident and the browser will have it for what he is. </p>
+
+
+<!-- O Atributo "títulos e cabeçalhos"
+Em HTML o título é exatamente o que parece: um título real ou subtítulo, quando você coloca no
+texto a tag <h1> , o texto crescerá e a dimensão das letras será de acordo com o número de
+cabeçalhos. Os títulos podem ter dimensões de 1 a 6, ond 1 é a menor dimensão e 6 a maior. -->
+<h1>Headers</h1>
+<h2>are</h2>
+<h3>great</h3>
+<h4>for</h4>
+<h5>titles</h5>
+<h6>and subtitles</h6>
+
+
+<!-- O Atributo "quebra de linhas" 
+A quebra de linha é diferente de outras tags que você viu antes. O espaço colocado entre o código fonte do documento irá terminar a linha e ir abaixo com a linha, deixando um espaço menor que o de parágrafo -->
+<p>
+	Charles Brownstone<br/>
+	Florida Street Nº1<br/>
+	NY, USA<br/>
+</p>
+
+
+<p>
+	Thanks<br/>
+	<br/>
+	<br/>
+
+ <!-- Note que a próxima tah é "hr" e não "br". 
+ Ela adiciona uma linha contínua horizontal -->
+	<hr/>
+	Charles Brownstone<br/>
+	Vice President
+</p>
+
+
+
+<!-- O Atributo "linhas horizontais"
+Use <hr/> para cirar uma linha horizontal. Essa tag é parecida com a de Quebra de Linha. -->
+<hr/>
+	take
+<hr/><hr/>
+	care
+<hr/>
+	with it
+<hr/>
+
+
+<hr/>
+<p>
+	1) "Hobbit", JRR Tolkein.<br/>
+	2) "A Sociedade do Anel" JRR Tolkein.
+</p>
+
+
+<!-- O Atributo "listas"
+HTML tem três tipos de listas. 
+<ol> mostra as listas ordenadas, enquanto 
+<ul> , as desordenadas.
+E para fazer uma lista de definições use <dl>. 
+Use os atributos type e start para fazer a sua lista,
+dependendo dos seus interesses.
+•<ul> - Lista desordenadas, pontos
+•<ol> - Lista ordenada, números
+•<dl> - Lista de definições -->
+<h4> GOALS </h4>
+<ol>
+	<li> Find a job, </li>
+	<li> make a lot of money </li>
+	<li> and move to another city</li>
+</ol>
+
+<!-- Você pode começar a sua lista com qualquer número que você quises, apenas especifique isso com a ajuda do atributo start. -->
+<h4> GOALS </h4>
+<ol start = "4">
+	<li> Find a job, </li>
+	<li> make a lot of money </li>
+	<li> and move to another city</li>
+</ol>
+
+
+<!-- O Atributo "outros tipos de listas ordenadas"
+Fora o exemplo acima, há outros quatro tipos de listas ordenadas. Ao invés da numeração normal, você pode usar numerais romanos ou letras, mas em ambos os casos só pode ser usado na forma minúscula ou maiúscula. Use o atributo type se quiser modificar o tipo de numeração. -->
+<ol type = "a">
+	<li> Find a job, </li>
+	<li> make a lot of money </li>
+	<li> and move to another city</li>
+</ol>
+
+<ol type = "A">
+	<li> Find a job, </li>
+	<li> make a lot of money </li>
+	<li> and move to another city</li>
+</ol>
+
+<ol type = "i">
+	<li> Find a job, </li>
+	<li> make a lot of money </li>
+	<li> and move to another city</li>
+</ol>
+
+<ol type = "I">
+	<li> Find a job, </li>
+	<li> make a lot of money </li>
+	<li> and move to another city</li>
+</ol>
+
+
+<!-- O Atributo "lista desordenada"
+Você pode criar uma lista desordenada com a ajuda da tag <ul> . As listas desordenadas são de três tipos: quadrados, pontos e círculos. O valor padrão que a maioria dos navegadores dão são pontos. -->
+<h4> Shopping List</h4>
+<ul>
+	<li> Milk </li>
+	<li> Cheese </li>
+	<li> Eggs </li>
+	<li> Sugar </li>
+</ul>
+
+
+<ul type="square">
+	<li> Milk </li>
+	<li> Cheese </li>
+	<li> Eggs </li>
+	<li> Sugar </li>
+</ul>
+
+<ul type="disc">
+	<li> Milk </li>
+	<li> Cheese </li>
+	<li> Eggs </li>
+	<li> Sugar </li>
+</ul>
+
+<ul type="circle">
+	<li> Milk </li>
+	<li> Cheese </li>
+	<li> Eggs </li>
+	<li> Sugar </li>
+</ul>
+
+
+<!-- O Atributo "listas de definições"
+Da mesma forma, você pode fazer uma lista de definições usando a tag <dl>; . Essa lista irá dar a palavra, uma definição. A palavra é indicada em negrito, assim que ficará mais evidente. -->
+<dl>
+	<dt>Queso</dt>
+	<dd>Palavra espanhola para queijo.</dd>
+
+	<dt>Ordenador</dt>
+	<dd>Palavra espanhola para computador.</dd>
+</dt>
+
+
+<!-- O Atributo "formatação de texto"
+A medida que você vai colocando mais textos na sua página, precisará de elementos de formatação para ela. -->
+<p>Example of <b>bold text</b></p>
+<p>Example of <em>emphasized text</em></p>
+<p>Example of <strong>strong text</strong></p>
+<p>Example of <i>italic text</i></p>
+<p>Example of <sup>top text</sup></p>
+<p>Example of <sub>bottom text</sub></p>
+<p>Example of <del>strikethrough text</del></p>
+<p>Example of <code>computer code text</code></p>
+
+<!-- Essas tags devem ser usadas com moderação. O que queremos dizer, é que são indicadas para
+destacar uma palavra ou parágrafo. Quando você as usa em um parágrafo inteiro, por exemplo, é
+melhor usar CSS . De qualquer forma, isso é apenas uma sujestão, afinal, a decisão é sua e você
+pode usá-los como sua experiência indicar. -->
