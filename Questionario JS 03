@@ -1,0 +1,30 @@
+Questão 01-)
+(V)
+(V)
+(V)
+(V)
+
+
+Questão 02-)
+(Não)0
+(Não)1
+(Não)8
+(Sim)9
+
+
+Questão 03-)
+(F)
+(F)
+(F)
+(V)
+
+
+Questão 04-)
+if(curso.toUpperCase() == 'TDS')
+
+
+Questão 05-)
+onmouseup(1 - libera o botão)
+onmouseout(2 - retira o botão sobre o elemento)
+onmouseover(3 - passa sobre o elemento)
+onmousermove(4 - move o ponteiro sobre o elemento)
