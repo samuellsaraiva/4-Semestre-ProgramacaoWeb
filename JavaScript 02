@@ -1,1 +1,128 @@
+<!-- Programa Nº01 -->
+<!DOCTYPE html>
+<html>
+<head>
+<tittle>js03_comentario04.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+<h3>Programa de Boas Vindas</h3>
 
+<script language="javascript">
+
+var js_nome
+
+js_nome = window.prompt('Enter your name: ', 'Type yout name here');
+
+document.write('Ol\u00e1, ' + js_nome + '! Seja bem vindo.');
+
+</script>
+</body>
+</html>
+
+
+
+
+<!-- Programa Nº02 -->
+<!DOCTYPE html>
+<html>
+<head>
+<tittle>js03_soma.htm - somatoria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+
+<body>
+<h3>Somatória de 2 números inteiros</h3>
+
+<script language="JavaScript">
+
+var js_num1;
+var js_num2;
+var js_sum;
+
+js_num1 = window.prompt('Enter the first number: ', 'Type here');
+js_num2 = window.prompt('Enter the second number: ', 'Type here');
+
+js_sum = parseInt(js_num1) + parseInt(js_num2);
+
+document.write ('Result = ' + js_sum);
+</script>
+</body>
+</html>
+
+
+
+
+<!-- Programa Nº02 com alteração 'parseInt' -->
+<!DOCTYPE html>
+<html>
+<head>
+<tittle>js03_parseInt.htm - somatoria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+
+<body>
+<h3>Somatória de 2 números inteiros</h3>
+
+<script language="JavaScript">
+
+var js_num1;
+var js_num2;
+var js_sum;
+
+js_num1 = parseInt(window.prompt('Enter the first number: ', 'Type here'));
+js_num2 = parseInt(window.prompt('Enter the second number: ', 'Type here'));
+
+js_sum = js_num1 + js_num2;
+
+document.write ('Result = ' + js_sum);
+</script>
+</body>
+</html>
+
+
+
+
+
+<!-- Programa Nº03 -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>js03_funcao.htm</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+
+<body>
+<h3>Somatória de dois números inteiros</h3>
+
+<form name = 'FormSoma' action = ' ' method = 'post'>
+	Primeiro valor: <input type = 'text' name = 'f_valor1' /><p></p>
+	Segundo valor: <input type = 'text' name = 'f_valor2' /><p></p>
+	<input type = 'button' name = 'btn_somar' value = 'Somar' onclick = 'soma()'/>
+	<input type = 'reset' name = 'btn_apagar' value = 'Apagar'/>
+</form>
+
+<script language = "javascript">
+
+var js_valor1;
+var js_valor2;
+var js_res;
+
+function soma(){
+	js_valor1 = parseInt(document.FormSoma.f_valor1.value);
+	js_valor2 = parseInt(document.FormSoma.f_valor2.value);
+	js_res = js_valor1 + js_valor2;
+	window.alert('Result =  ' + js_res.toString());
+}
+
+
+</script>
+</body>
+</html>
