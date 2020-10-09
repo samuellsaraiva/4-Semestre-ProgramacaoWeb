@@ -1,1 +1,440 @@
+<!-- O Atributo "códigos de cor"
+Há três formas diferentes de definir uma cor. A maneira mais fácil é colocar o nome em Inglês. Por exemplo: black, white, red, green and blue. Colocamos juntos os nomes das cores que o HTML suporta.
 
+aqua #00FFFF 
+green #008000 
+navy #000080 
+silver #C0C0C0
+black #000000
+gray #808080
+olive #808000
+teal #008080
+blue #0000FF
+lime #00FF00
+purple #800080
+white #FFFFFF
+fuchsia #FF00FF
+maroon #800000
+red #FF0000
+yellow #FFFF00
+-->
+
+<!-- O Atributo "sistema hexadecimal de cores"
+O Sistema Hexadecimal é bem difícil no primeiro momento, mas assim que você passar esse primeiro momento e com um pouco de prática, você o compreenderá completamente. O Sistema Hexadecimal de cores é padrão para todos os navegadores. É confiável e compatível não apenas com aplicações de web. O Sistema Hexadecimal é a representação de seis caracteres de cor. Os dois primeiros caracteres (RR) representam o valor vermelho, os próximos dois (GG), os verdes, e os últimos dois (BB) são azuis. -->
+<body bgcolor = '#808080'>
+</body>
+
+<!-- A letra "F" é o valor máximo que o sistema pode ser. Quando o navegador ver esse código, ele mostra a cor branca. No caso de você querer achar o valor numérico de uma cor, nós temos a seguinte fórmula: -->
+<body (15*16) + (15) = 255>
+</body>
+
+
+<!-- A fórmula é muito simples. Nós pegamos o primeiro valor de "F" ou 15 e multiplicamos por 16, e adicionamos o segundo valor 15. O resultado é 255, o valor máximo que uma cor primária pode
+ter. -->
+<body
+	bgcolor="#C0C0C0"
+	CC(RR - Red)
+	(12 * 16) + (12) = 204
+	70(GG - Green)
+	(7 * 16) + (0) = 112
+	05(BB - Blue)
+	(0 * 16) + (5) = 5
+</body>
+
+
+<!-- O Atributo "True Colors - as cores que não mudam"
+O Sistema Hexadecimal é usado para cifrar páginas. É compatível com a maioria dos navegadores, assim a forma como as cores são apresentadas não irá mudar. Por garantia utilize as cores verdadeiras como:"#0011EE", "#44HHFF", ou "#117788". Esse tipo de cor não irá mudar no navegador. 
+
+
+Recomenda-se que se mantenha nessas 216 cores "seguras para a web". Mas as exibições em 8-bit eram muito mais comuns quando a paleta de 215 cores foram desenvolvidas do que são agora. De qualquer forma foi descoberto que apenas 22 das 216 cores seguras para a web são fidedignamente expostas sem um remapeamento inconsistente em exibições em computadores de 16-bit. -->
+
+
+
+<!-- O Atributo "fonte e basefont"
+A tag <font> é usada para modificar o tipo do texto, o tamanho e a cor. Use os atributos "size", "color" e "face" para personalizar o texto e a tag <basefont> para colocar cor, tamanho e estilo em todo o texto. Geralmente as tags "font" e "basefont" não são muito usadas, porque CSS oferece maneiras
+muito melhor de colocar atributos ao texto. -->
+
+<!-- O Atributo "tamanho da fonte"
+Ponha o tamanho da fonte. Eles aceitáveis entre 1 (o menor) e 7 (o maior). O valor padrão do texto é 3 -->
+<p> <font size = "5"> Esta é uma fonte de tamanho igual a 5</font> </p>
+
+
+<!-- O Atributo "cor da fonte" -->
+<p>
+	<font color = "#990000"> Esse texto está na cor hexodecimal #990000 </font><br/>
+	<font color="red"> Esse texto é vermelho </font>
+</p>
+
+
+<!-- O Atributo "face font"
+Pegue uma letra usando um atributo de face da donte. Você pode escolher qualquer fonte que tenha instalada, mas escolha com cuidado, pois os usuários da sua página não podem ver a fonte, se eles não a tiverem instalada. Ele verá a fonte default significando Times New Roman. A solução seria escolher várias fontes que se parecem. -->
+<p> <font face = "Bookman Old Style, Book Antiqua, Garamond">Esse parágrafo tem sua fonte formata com atributos de face da font </font></p>
+
+
+<!-- O Atributo "basefont"
+Com a ajuda da tag "basefont" você poderá indicar um valor default para a sua página de web. Nós recomendamos especificamente a "basefont" no caso de você usar uma fonte em HTML. -->
+<html>
+	<body>
+		<basefont size = "5" color = "green">
+
+			<p>Esse parágrafo tem sua fonte formatada com tag de basefont</p>
+			<p>Esse parágrafo tem sua fonte formatada com tag de basefont</p>
+			<p>Esse parágrafo tem sua fonte formatada com tag de basefont</p>
+
+		</basefont>
+	</body>
+</html>
+
+<!-- Com todos esses, "basefont" é de alguma forma preterido. É possível que no futuro próximo isso não funcionará mais e será totalmente substituído pelas regras CSS. -->
+
+<!-- ATRIBUTOS 
+size= "Num. // Valor 1-7" // Tamanho do seu texto, 7 é o maior
+color= // "rgb, nome ou  hexadecimal" // Muda a cor da fonte
+face= // "nome da fonte" // Muda o tipo de fonte
+-->
+
+
+<!-- O começo "pelo livro" -->
+<p><font size = "7" face = "Georgia, Arial" color = "maroon">C</font>ustomize sua fonte para conseguir o look que deseja. </p>
+
+
+<!-- O Atributo "links"
+O atributo "href" nomeia a conexão com outra página de web. Na verdade é o lugar para onde serão enviados os usuários que clicarem no link. Links podem ser:
+•Internos - para lugares específicos da página (ancoras)
+•Locais - para páginas do mesmo domínio
+•Globais - para outros domínios, fora do site
+-->
+Interno - href="#anchorname" </br>
+Local - href="../imgs/EducatuX.png" </br>
+Global – href="http://www.educatux.com.br/" </br>
+
+
+<!-- O Atributo "links de texto"
+Para marcar o início e do fim de uma âncora pode ser usado <a></a>. Escolha o tipo de atributo que você precisa e coloque dentro da tag. -->
+</br>
+<a href = "http://www.educatux.com.br" target = "_blank" title = "EducatuX"> EducatuX </a>
+
+
+<!-- O Atributo "link target"
+O atributo "target" diz ao navegador se ele precisa abrir outra página na mesma janela ou em outra.
+
+target=" _blank" → Abrir uma nova janela;
+target=" _self" → Abrir a página na mesma janela;
+target=" _parent" → Abrir nova página na mesma janela do link;
+target=" _top" → Abre a nova página no mesmo navegador cancelando todos os demais frames;
+-->
+<br/>
+<a href = "http://www.google.com/" target = "_blank" > Google </a>
+
+
+<!-- O Atributo "âncora"
+É usada para lincar duas seções da mesma página. Desta forma temos que nomear essas seções. Para isso é indicado dar uma olhada no próximo exemplo. -->
+<br/>
+<h1>HTML - Hipertexto de Referência / href <a name = "top"> </a> </h1>
+<h2>HTML - Links de Texto <a name = "text"> </a> </h2>
+<h2>HTML - Texto de E-mail <a name="email"> </a> </h2>
+
+<!-- Depois temos que fazer um código para o link, colocando primeiro o nome da âncora. -->
+<a href = "#top"> Ir para cima </a> <br/>
+<a href = "#text"> Aprender sobre links de texto </a> <br/>
+<a href = "#email"> Aprender sobre endereços de e-mail </a> <br/>
+
+
+<!-- O Atributo "link de e-mail"
+Fazer um link de e-mail é bem simples. Se você quer que alguém te escreva um e-mail, a melhor maneira seria colocar a disposição um link com o seu e-mail e preestabelecer os assuntos.
+-->
+<a href = "mailto:samuka125@gmail.com?subject=Questions "> Perguntas aqui </a> </br>
+
+<!-- No caso de o assunto não ser suficiente e você quer adicionar algo ao conteúdo do e-mail, pode fazê-lo com a ajuda do próximo código:
+-->
+<a href= " mailto:samuka125@gmail.com?subject=Questions&body=Write here if you have questions " > Perguntas aqui </a> </br>
+
+
+<!-- O Atributo "links de download"
+Os links de download se parecem com um link normal de texto. O problema é quando você quer adicionar uma foto. A melhor solução é usar uma miniatura como link, mas falaremos mais disso na próxima lição. -->
+<a href = "https://docplayer.com.br/storage/64/51085632/1583445494/4YOh2oRLimIw6Lo7C9FmPQ/51085632.pdf" > Documento PDF </a> </br>
+
+
+<!-- O Atributo "defaukt link/base link"
+use a tag <base> no interior do elemento <head> para colocar um link base. Isso é necessário caso você tenha em algum lugar um link que não funciona ou um caso de um destino que não mais existe. O link base envia o usuário a um endereço específico. Geralmente para a página inicial, mas pode ser para qualquer outra página, eventualmente uma feita com esse propósito. -->
+<head>
+	<base href = "http://www.educatux.com.br/">
+</head>
+
+
+<!-- O Atributo "entities e símbolos"
+Em HTML "entity" é um nome chique para "símbolo". Alguns símbolos como copyright, marca registrada e muitos outros estão disponíveis no seu teclado, mas para HTML precisam de ser escritos de uma forma especial. 
+•Comece com o sinal de ampersand -&
+•Depois escreva o nome do sinal - copy
+•Ao final coloque um ponto e vírgula - ;
+Copyright
+Use &copy; para fazer - Â© - o símbolo de Copyright -->
+
+
+<!-- Espaços múltiplos e "<less than", "greater
+than"> Como dito na lição sobre parágrafos, o navegador reconhecerá um único espaço, não importa quantos você coloque no código HTML. Mas tem um simbolo que pode ser introduzido para
+mostrar mais de um espaço. -->
+<p> Nesta frase foi introduzido &nbsp;&nbsp;&nbsp;&nbsp; mais espaços. <p>
+
+<!-- Para fazer comando no HTML você os símbolos de "menor" e "maior". Para ser mostrado o navegador você deve usar um símbolo. -->
+<p>
+	Less then- &lt; <br/>
+	More then- &gt; <br />
+	Head tag - &lt;head&gt;
+</p>
+
+
+<!-- HTML Tabela de Símbolos e Caracteres (def, valor, nome)
+  // Sem quebra de espaço // &#160; // &nbsp;
+< // Menos                // &#60;  // &lt;
+> // Mais                 // &#62;  // &gt;
+" // Aspas                // &#34;  // &quot;
+¡ // Exclamação Invertida // &#161; // &iexcl;
+¢ // Centavo              // &#162; // &cent;
+£ // Libra Esterlina      // &#163; // &pound;
+¤ // Moeda                // &#164; // &curren;
+
+.
+.
+.
+
+Pag 14 até Pag 18 de símbologias; verificar posteriormente
+-->
+
+
+<!-- O Atributo "e-mail (mailto link)
+Criar links para e-mail é muito simples. Deve ser mencionado que quando você coloca o link de um e-mail em uma página pública é muito fácil para um expert encontrá-lo e usar isso posteriormente para enviar spam.
+Se você quer que alguém te escreva um e-mail a melhor forma é colocar um link com o seu e-mail e preestabelecer o assunto.
+*mesma coisa que o anterior ?????* -->
+<a href="mailto:samuka125@gmail?subject=Questions" title="">Pergunte aqui </a> </br>
+
+<!-- No caso do assunto não ser suficiente e você querer adicionar mais alguma coisa ao conteúdo do e-mail, você pode fazer isso com a ajuda do código:
+-->
+<a href="mailto:samuka125@gmail?subject=Questions&body=Write here if you have questions"
+title="" >Perguntas aqui</a> </br>
+
+
+<!-- O Atributo "Imagens"
+As imagens são muito importantes em uma página de web. É por isso que devem ser usadas da maneira certa. Insira imagens usando a tag <img/>. -->
+<img alt = "html image example" src "/assets_tutorials/img/image.jpg" /> </br>
+
+
+<!-- O Atributo "img src"
+"src" é a forma curta para "source" (fonte). Esse atributo é usado para indicar a localização da imagem. 
+
+src="image.jpg" // Essa imagem está localizada no mesmo nível que o arquivo .html
+
+src="../image.jpg" // Essa imagem está localizada no nível anterior que o arquivo .html
+
+src="../img/image.jpg" // Essa imagem está localizada no arquivo "img" no nível anterior que o arquivo .html
+
+pode-se colocar o URL inteiro, por exemplo:
+-->
+scr = "http://www.educatux.com.br/imgs/EducatuX.png"
+
+<!-- O padrão URL não é recomendado, porque no caso de você mudar o domínio, ter e que mudar todas as imagens. ou se as imagens forem guardadas em outro domínio, use apenas scr="http://
+www.domain.com/image.jpg". O fato de guardar as imagens em um servidor alternativo apresenta grandes vantagens se o espaço provido pelo seu domínio for limitado. -->
+
+
+<!-- O Atributo "alternativa para imagens"
+O atributo "alt" é usado para apresentar texto ao invez de imagem no caso de por alguma razão o navegador não   disponibilizar a imagem ou quando um usuário tem a opção "Mostrar Imagem" não selecionada. -->
+<img alt="html image example" src="/imgs/EducatuX.png" />
+
+
+<!-- O Atributo "o peso e a dimensão da imagem"
+Para determinar o peso e a dimensão da imagem é usado os atributos "height" (peso) e "width" (dimensão). -->
+<img alt="html image example" src="/assets_tutorials/img/image.jpg" width="120" height="75" />
+
+
+<!-- O Atributo "alinhamento horizontal e vertical de uma imagem"
+Para isso usaremos os atributos align e valign. As opções oferecidas por esses atributos são:
+1. Align (horizontal)
+	•right
+	•left
+	•center
+2. Valign (vertical)
+	•top
+	•bottom
+	•center
+-->
+<img alt="" align="right" src="/assets_tutorials/img/image.jpg" />
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+
+
+
+<!-- O Atributo "usando imagens como links"
+Isso é apenas uma introdução, nós falaremos mais sobre isso no próximo tutorial. As imagens são bem úteis como links e podem ser formadas como no seguinte: -->
+<a href="http://www.educatux.com.br" title="HTML link image example">
+	<img alt="html image example" src="/imgs/EducatuX.png" width="120" height="75" />
+</a> </br>
+
+
+
+<!-- O Atributo "miniaturas"
+Miniaturas são versões em miniatura (menos kilobytes) de imagens que tem uma qualidade muito superior. Para criar uma miniatura salve a imagem com uma qualidade inferior a da original. E então linque essa imagem pequena com a original de alta qualidade. -->
+<a href="/imgs/EducatuX.png" title="HTML link image thumbnail example">
+	<img alt="html image example" src="/imgs/EducatuX.png" width="66" height="49" />
+</a> </br>
+
+
+<!-- O Atributo "links de imagens"
+Com a ajuda de imagens você pode dar um pouco de cor e vida para a sua página de web. Transformar em a imagem em um link não é difícil. Você apenas precisa introduzir a fonte da imagem dentro da tag img e colocar dentro de uma tag de link. -->
+<a href="http://www.educatux.com.br/" title="This is an HTML liked image">
+	<img alt="alternative text for the liked image" src="/imgs/EducatuX.png" width="120"
+height="75" />
+</a> </br>
+
+
+<!-- Em alguns casos, por default, alguns navegadores adicionam boras as imagens usadas como links, por ser fácil de diferenciar de uma imagem normal. Então para você não ter problemas para ver por causa do navegador, nós podemos definir um valor de borda. -->
+<a href="http://www.educatux.com.br/" title="This is an HTML liked image">
+	<img alt="alternative text for the liked image"
+	src="/imgs/EducatuX.png"
+	width="120"
+	height="75"
+	border="5"
+	style="border:5px solid #337AB7" />
+</a> </br>
+
+<!-- O atributo de borda <img> não é suportado em HTML5. Incluiríamos uma regra CSS que você poderia usar no lugar. -->
+
+
+
+<!-- O Atributo "miniaturas" (mesmo do outro dnv ??????)
+As miniaturas são versões pequenas (com menos KB) de alguma imagem com maior e melhor qualidade. Para fazer uma miniatura, salve a imagem em pior qualidade e menores dimensões. Então faça dessa imagem um link que leva até a imagem original de maior dimensão e qualidade. -->
+<a href="/imgs/EducatuX.png" title="This is an HTML liked image">
+	<img alt="alternative text for the liked image" src="/imgs/EducatuX.png" width="66"
+	height="49" />
+</a> </br>
+
+
+<!-- O Atributo "formulários"
+Formulários são algumas das mais importantes ferramentas usadas por um metres da web para juntar informações importantes sobre o usuário da internet. ser, informações como e-mail, nome, endereço, telefone e qualquer outro tipo de informação. Baseado na necessidade da informação, pode até ser criado um arquivo, fazer estatísticas, registrar formulários ou subscrições das informações presentes na sua página de web, e mais. -->
+
+<!-- CAMPOS DE TEXTO 
+Antes de chegar a um detalhe nós temos que expor alguns formulários básicos. Campos de texto tem alguns atributos que devem ser mencionados desde o começo:
+•type - estabelece o tipo de campo de texto. Por exemplo: texto, envio ou senha.
+•name - dá ao campo o nome para futura referencia em outro dado.
+•size - estabelece o tamanho do campo.
+•maxlenght - o valor máximo de caracteres que podem ser digitados.
+-->
+<form method="post" action="mailto:youremail@email.com">
+	Nome: <input type="text" size="10" maxlength="40" name="name" /><br />
+	Senha: <input type="password" size="10" maxlength="10" name="password" />
+</form> </br>
+
+<!-- NÃO use esse código. Dados desse formulário não serão encriptados e não serão seguros. -->
+
+
+<!-- O Atributo "formulários de e-mail"
+Vamos adicionar o botão de enviar agora. Geralmente esse botão deve ser o último e é nomeado como "enviar" ou algo parecido.
+Também temos de especificar o destino dos dados colocados no formulário, a fim de transferilos. Isso pode ser feito adicionando os seguintes atributos:
+•method - Usaremos o "post" method. Isso enviará o formulário com as informações inseridas sem mostrar os detalhes do usuário.
+•action - Isso será usado para especificar uma URL para onde a informação será enviada. -->	
+<form method="post" action="mailto:youremail@email.com">
+	Nome: <input type="text" size="10" maxlength="40" name="name" /><br />
+	Senha: <input type="password" size="10" maxlength="10" name="password" /><br />
+ <input type="submit" value="Send" /> </form>
+
+<!-- Apenas mude o endereço de e-mail para um real para que funcione -->
+
+
+
+<!-- O Atributo "botões de rádio"
+Os botões de rádio são bastante populares, uteis e fáceis de usar. O exemplo mais comum seria perguntas com mais de uma resposta. Há atributos para isso, como:
+•value - especifica o que será enviado no caso em que certos botões forem selecionados. Apenas um valor será enviado. 
+•name - decide a qual set de botões o que foi selecionado pertence
+-->
+<form method="post" action="mailto:youremail@email.com">
+	<p>Que tipo de sapatos você está usando?</p>
+
+	<label>Tonalidade:</label> <br/>
+		<input type="radio" name="color" value="dark" /> Escuro <br/>
+		<input type="radio" name="color" value="light" /> Claro <br/>
+	</br>
+	<label>Tamanho:</label> <br />
+		<input type="radio" name="size" value="small" /> Pequeno <br/>
+		<input type="radio" name="size" value="average" /> Normal <br/>
+		<input type="radio" name="size" value="big" /> Grande <br/>
+
+		<input type="submit" value="Email Myself" />
+</form>
+
+<!-- Noca (?????) em que você vai substituir o endereço de  e-mail pelo seu, você receberá um e-mail com: 'size=(choose) color=(choose)'. -->
+
+
+<!-- O Atributo "checkbox"
+Usando checkboxes o usuário tem a possibilidade de escolher uma, duas ou mais respostas variantes. O nome e valor atribuídos são usados como nos botões de rádio. -->
+<form method="post" action="mailto:youremail@email.com">
+	<p>Que cor de sapatos você prefere?</p>
+		<input type="checkbox" name="shoes" value="black" /> Preto <br/>
+		<input type="checkbox" name="shoes" value="white" /> BRanco<br/>
+		<input type="checkbox" name="shoes" value="gray" /> Cinza <br/>
+		<input type="checkbox" name="shoes" value="black&white" /> Branco e Preto <br/>
+
+	<input type="submit" value="Email Myself" />
+</form>
+
+
+<!-- O Atributo "outros tipos de formulários"
+Outro modelo d listar formulários está abaixo, em que o usuário seleciona uma linha para ser enviada como a opção escolhida. -->
+<form method="post" action="mailto:youremail@email.com">
+	<p>Preferência musical</p>
+
+		<select multiple name="music" size="4">
+			<option value="emo" selected>Emo</option>
+			<option value="metal/rock" >Metal/Rock</option>
+			<option value="hiphop" >Hip Hop</option>
+			<option value="ska" >Ska</option>
+			<option value="jazz" >Jazz</option>
+			<option value="country" >Country</option>
+			<option value="classical" >Classical</option>
+			<option value="alternative" >Alternative</option>
+			<option value="oldies" >Oldies</option>
+			<option value="techno" >Techno</option>
+		</select><br />
+
+	<input type="submit" value="Email Yourself" />
+</form>
+
+
+<!-- Outro modelo é o menu 'drop-down'. Ele se mostrará como um campo, que quando clicado mostrará uma lista. -->
+<form method="post" action="mailto:youremail@email.com">
+	<p>Nível de Educação?</p>
+			<select name="education">
+			<option>Escolha</option>
+			<option>Ensino Médio</option>
+			<option>Faculdade</option>
+			<option>Doutorado</option>
+		</select><br />
+	<input type="submit" value="Email Yourself" />
+</form>
+
+
+<!-- O Atributo "upload formulários"
+Primeiramente deve ser dito que esse formulário é apenas a interface, a parte visível com a qual o usuário poderá interagir. Para fazer um upload completo de formulário, conhecimento e habilidade PHP e PERL são necessários, para não mencionar Javascript. O upload de um formulário é composto de várias partes. Começaremos por estabelecer o tamanho do arquivo que será enviado. Isso pode ser feito usando um campo escondido. Depois disso, nós criaremos um campo em que o usuário poderá escreve o endereço do arquivo ou será capaz de procurar em uma janela de exploração. -->
+<input type="hidden" name="MAX_FILE_SIZE" value="100" /> <input name="file" type="file" />
+
+
+<!-- O Atributo "zonas do texto, comentários"
+Geralmente zonas de texto são criadas para enviar comentários. A maioria dos blogs e fóruns usam esse tipo de opção. Entretanto vários sites também usam zonas de texto para saber a opnião de seus usuários em algum assunto. Para criar uma zona de texto primeiro é necessário especificar os atributos de filas e colunas
+dentro da tag <textarea> . 'Filas' estabelecerão o peso do campo e colunas, o tamanho - em caracteres. No exemplo seguinte há 5 linhas de 20 caracteres cada. Então temos que especificar os atributos nas tags de enlaço, sendo elas:
+•wrap=
+1. "off"
+2. "virtual"
+3. "physical"
+-->
+<form method="post" action="mailto:youremail@email.com">
+	<textarea rows="5" cols="20" wrap="physical" name="comments">Escreva um comentário </textarea> <br/>
+	<input type="submit" value="Email Yourself" />
+</form>
