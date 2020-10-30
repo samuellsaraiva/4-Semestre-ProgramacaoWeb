@@ -1,54 +1,68 @@
-<form>
-    <fieldset>
-        <legend>Dados Pessoais</legend>
-        <label for="nome"> Nome: </label>
-        <input type="text" name="email"> <br />
-        <label for="endereço"> <br> Endereco: </label>
-        <input type="text" name="email"> <br />
-        <label for="cidade"> <br> Cidade: </label>
-        <input type="text" name="email"> <br />
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Formulários
+    </title>
+</head>
+
+<body>
+    <form action="pagina-que-recebe-os-dados" method="POST">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome"> Nome: </label>
+            <input type="text" name="email"> <br />
+            <label for="endereço"> <br> Endereco: </label>
+            <input type="text" name="email"> <br />
+            <label for="cidade"> <br> Cidade: </label>
+            <input type="text" name="email"> <br />
+
+            <br>
+
+            Estado:
+            <select name='Estado'>
+                <option>Sao Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Distrito Federal</option>
+            </select><br />
+
+        </fieldset>
 
         <br>
 
-        Estado:
-        <select name='Estado'>
-            <option>Sao Paulo</option>
-            <option>Rio de Janeiro</option>
-            <option>Minas Gerais</option>
-            <option>Distrito Federal</option>
-        </select><br />
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            Natureza do Cargo <br>
+            <input type="radio" name="cargo" value="gerencia"> Gerencia
+            <input type="radio" name="cargo" value="fianceiro"> Financeiro
+            <input type="radio" name="cargo" value="recepcao"> Recepcao
+            <input type="radio" name="cargo" value="administrativo"> Administrativo
+            <input type="radio" name="cargo" value="juridico"> Juridico
 
-    </fieldset>
-</form>
+            <p>
 
-<br>
+                Area de Interesse <br>
+                <input type="checkbox" name="area" value="1"> Computacao
+                <input type="checkbox" name="area" value="2"> Biologia
+                <input type="checkbox" name="area" value="3"> Meio Ambiente
+                <input type="checkbox" name="area" value="4"> Engenharia
+                <input type="checkbox" name="area" value="5"> Historia
 
-<form>
-    <fieldset>
-        <legend>Dados Profissionais</legend>
-        Natureza do Cargo <br>
-        <input type="radio" name="cargo" value="gerencia"> Gerencia
-        <input type="radio" name="cargo" value="fianceiro"> Financeiro
-        <input type="radio" name="cargo" value="recepcao"> Recepcao
-        <input type="radio" name="cargo" value="administrativo"> Administrativo
-        <input type="radio" name="cargo" value="juridico"> Juridico
+            <p>
 
-        <p>
-
-            Area de Interesse <br>
-            <input type="checkbox" name="area" value="1"> Computacao
-            <input type="checkbox" name="area" value="2"> Biologia
-            <input type="checkbox" name="area" value="3"> Meio Ambiente
-            <input type="checkbox" name="area" value="4"> Engenharia
-            <input type="checkbox" name="area" value="5"> Historia
-
-        <p>
-
-        <div>
-            <label for="msg">Mini-Curriculo:</label>
-            <textarea rows="6" cols="45" id="msg">
+            <div>
+                <label for="msg">Mini-Curriculo:</label>
+                <textarea rows="6" cols="45" id="msg">
             </textarea>
-        </div>
+            </div>
 
-    </fieldset>
-</form>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
