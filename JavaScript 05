@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        var pontos = 70;
+        if ((pontos < 34) || (pontos > 65)) {
+            document.write("Jogador venceu");
+        }
+        else {
+            document.write("Jogador perdeu");
+        }
+    </script>
+</head>
+
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        var vidas = 3;
+        if (vidas > 2) {
+            document.write("Jogador vivo");
+        } else if (vidas == 2) {
+            document.write("Jogador ferido");
+        } else if (vidas == 1) {
+            document.write("Jogador muito ferido");
+        } else {
+            document.write("Jogador morto");
+        }
+    </script>
+</head>
+
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        var vidas = 3;
+        if (vidas > 2) {
+            document.write("Jogador vivo");
+        } else if (vidas == 2) {
+            document.write("Jogador ferido");
+        } else if (vidas == 1) {
+            document.write("Jogador muito ferido");
+        } else {
+            document.write("Jogador morto");
+        }
+    </script>
+</head>
+
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        var idade = eval(prompt("Qual a sua idade?"));
+        if (idade < 16)
+            document.write("<h2>Não eleitor</h2>");
+        else if (idade >= 16 && idade < 18 || idade > 65)
+            document.write("<h2>Eleitor facultativo</h2>");
+        else
+            document.write("<h2>Eleitor obrigatório</h2>");
+    </script>
+</head>
+
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        var idade = eval(prompt("Informe sua idade para saber se você pode votar ou não!"));
+
+        if (idade < 16) {
+            document.write("<h2>Atenção!Não pode votar.</h2>");
+            document.write("<h2>Sua idade é menor que 16 anos,</h2>");
+        }
+        else if (idade >= 16 && idade < 18 || idade > 65) {
+            document.write("<h2>Atenção!Você pode votar.</h2>");
+            document.write("<h2>Pois seu voto é facultativo</h2>");
+        }
+        else {
+            document.write("<h2>Atenção!Você deve votar.</h2>");
+            document.write("<h2>Seu voto é obrigatório</h2>");
+        }
+    </script>
+</head>
+
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        numero = window.prompt("Informe um número entre 1 e 3:");
+        var pos = parseInt(numero);
+        switch (pos) {
+            case 1:
+                document.write("O Número 1 é o Campeão");
+                break;
+            case 2:
+                document.write("O Número 2 é o Segundo lugar");
+                break;
+            case 3:
+                document.write("O Número 3 é oTerceiro lugar");
+                break;
+            default:
+                document.write("Não subiu no pódio");
+
+        }
+    </script>
+</head>
+
+
+<head>
+    <title>Curso de Javascript</title>
+    <meta charset=“UTF-8”>
+    <script>
+        var salario = prompt("Inform o valor do seu salário: ");
+        var bonus = salario * (salario > 1000 ? 0.10 : 0.15);
+        document.write('<h1>O bonus para seu salário é: ' + bonus + '</h1>');
+    </script>
+</head>
+
+
+<body>
+    <h1>Linguagem JavaScript</h1>
+    <p>Utilizando document.write para gerar conteudo</p>
+    <script>
+        for (var i = 0; i < 10; i++) {
+            document.write('<h1>Texto gerado por funcao JavaScript </h1>');
+        }
+    </script>
+</body>
+
+
+<script>
+    var i = 5;
+    document.write("<b>iniciando while</b>");
+    while (i > 0) {
+        document.write("<br>em loop, na posição: " + i);
+        i--;
+    }
+    document.write("<br><b>while finalizado</b>");
+</script>
+
+</html>
