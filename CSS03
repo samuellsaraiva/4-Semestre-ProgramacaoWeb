@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title> 03 CSS BORDAS E ALINHAMENTOS </title>
+    <style>
+        body {
+            background-color: gold;
+        }
+
+        h1 {
+            background-color: greenyellow;
+        }
+
+        div {
+            background-color: #ffe0e5;
+            margin: 20px;
+            padding: 50px;
+            border: 3px solid blue;
+        }
+
+        p {
+            margin-top: 150px;
+            margin-bottom: 150px;
+            margin-right: 200px;
+            margin-left: 100px;
+        }
+
+        div {
+            padding: 70px 100px 70px 50px;
+        }
+
+        div {
+            border: 2px solid green;
+        }
+
+        h1 {
+            border-style: solid;
+            border-color: rgb(245, 16, 54);
+            border-width: 4px;
+        }
+
+        p {
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+        }
+
+        div {
+            /*ocupará 50% da largura disponivel */
+            width: 50%;
+            height: 30px;
+        }
+
+        body {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: #EEE;
+            width: 60%;
+            margin: 10px auto;
+        }
+
+        body {
+            background-color: chartreuse;
+            font-family: sans-serif;
+            color: blueviolet;
+        }
+
+        div {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px 40px;
+            background-color: white;
+            border: 0.5px solid lightgray;
+            border-radius: 10px;
+        }
+
+        body {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #EEE;
+        }
+
+        img {
+            border-radius: 5px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        /* iPads (restrato e paisagem) */
+
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+            /* estilos */
+            body {
+                width: 80%;
+                margin: 0 auto;
+                background-color: #EEE;
+            }
+
+            img {
+                border-radius: 5px;
+                margin-right: 10px;
+                float: left;
+            }
+        }
+
+        .city {
+            float: left;
+            margin: 5px;
+            padding: 15px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Página com conteúdo centralizado </h1>
+    <p> Lorem,..... </p>
+    <h1> Página com conteúdo centralizado </h1>
+    <p> lorem </p>
+
+    <div>
+        <h1>Conteúdo centralizado</h1>
+        <p> Lorem ipsum dolor
+        </p>
+        <h1>Conteúdo centralizado</h1>
+        <p> Lorem.... </p>
+    </div>
+
+    <img src="<a href=" https://www.uniceub.br/">UniCEUB</a>" width="100px" height="100px">
+    <p>UniCeub, UNICEUB, UNICEUB, UNICEUB, UNICEUB, UNICEUB. </p>
+    <p>UNICEUB, UNICEUB, UNICEUB, UNICEUB, UNICEUB, UNICEUB. </p>
+    <p>UNICEUB, UNICEUB, UNICEUB, UNICEUB,UNICEUB, UNICEUB. </p>
+    <p>UNICEUB, UNICEUB, UNICEUB, UNICEUB,UNICEUB, UNICEUB. </p>
+
+
+    <h1>Div float left</h1>
+
+    <div class="city">
+        <h2>Londres</h2>
+        <p>Londres é a capital da Inglaterra</p>
+        <p>É a cidade mais populosa do Reino Unido, com uma área metropolitana de mais de 13 milhões de habitantes</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris é a capital da França</p>
+        <p>Paris é um dos maiores centros populacionais da Europa, com mais de 12 milhões de habitantes </p>
+    </div>
+
+    <div class="city">
+        <h2>Tóquio</h2>
+        <p>Tóquio é a capital do Japão</p>
+        <p>Tóquio é a área metropolitana mais populosa do mundo</p>
+    </div>
+
+    <div class="city">
+        <h2>Nova Iorque</h2>
+        <p>NY é a cidade mais populosa dos EUA</p>
+        <p>NY é um importante centro de diplomacia internacional e tem sido descrita como capital cultural e financeira do mundo</p>
+    </div>
+
+</body>
+
+</html>
