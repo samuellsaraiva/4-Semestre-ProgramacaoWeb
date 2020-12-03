@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Exemplo Javascript</title>
+        <script>
+        alert("Olá Mundo");
+        </script>
+    </head>
+
+    <body>
+        <h2>O que JavaScript pode fazer?</h2>
+        <p id="demo">JavaScript pode alterar o CONTEÚDO de elementos HTML</p>
+        <p>Neste exemplo utilizamos JavaScript para alterar o conteúdo do parágrafo anterior quando o botão for acionado</p>
+        <button type="button" onclick='document.getElementById("demo").inner
+        HTML = "Olá JavaScript!"'>Click Me!</button>
+    </body>
+
+
+    <body>
+        <h2>O que JavaScript pode fazer?</h2>
+        <p>JavaScript pode alterar atributos de elementos HTML</p>
+        <p>Neste caso JavaScript altera o valor do atributo 'src' da imagem.</p>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+        Ligar a Luz
+        </button>
+        
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+        Desligar a luz
+        </button>
+    </body>
+
+
+    <body>
+        <h2>O que JavaScript pode fazer?</h2>
+        <p id="demo">JavaScript pode alterar o ESTILO CSS dos elementos HTML</p>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='40px'">
+        Clique para alterar o CSS do parágrafo!
+        </button>
+    </body>
+
+
+    <head>
+        <title>CSS e JavaScript</title>
+    </head>
+
+    <body>
+        <h2>Alterando Estilos CSS com JavaScript</h2>
+        <div id="divTexto" onClick="colorir()">Clique aqui para mudar o estilo deste texto!</div>
+        <script>
+            function colorir() {
+                var elementoDiv = document.getElementById("divTexto");
+                elementoDiv.style.backgroundColor = '#AA0000';
+                elementoDiv.style.color = 'white';
+                elementoDiv.style.textAlign = 'center';
+                elementoDiv.style.padding = '200px';
+                elementoDiv.innerHTML = 'A DIV MUDOU COR';
+            }
+        </script>
+    </body>
+
+
+    <body>
+        <h2>O que JavaScript pode fazer?</h2>
+        <p>JavaScript pode ocultar e exibir elementos HTML</p>
+        <button onclick="document.getElementById('myImage').style.display='none'">Ocultar luz</button>
+        <button onclick="document.getElementById('myImage').style.display='block'">Mostrar luz</button>
+        <img id="myImage" src="pic_bulbon.gif" style="display:block">
+    </body>
+
+
+    <body>
+        <h1 onmouseover="mOver(this)" onmouseout="mOut(this)">Passe o mouse aqui</h1>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)"style="background-color:red; width:140px; height:20px; padding:40px;">Passe o mouse aqui</div>
+        <script>
+            function mOver(obj) {
+                obj.innerHTML = "Mudou a Cor ao passar o mouse :-)";
+                obj.style.backgroundColor = 'lightgreen';
+            }
+            function mOut(obj) {
+                obj.innerHTML = "Passe o mouse aqui";
+                obj.style.backgroundColor = 'red';
+            }
+        </script>
+    </body>
+
+
+    <head>
+        <title>Exemplo Javascript Externo</title>
+        <script
+            type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+        </script>
+    </head>
+
+    <body>
+        <script>
+            var a = 8;
+            var b = 2;
+            var h = 3;
+            var area = ((b*h)/2);
+            document.writeln('A área de um triângulo cuja base é 2 e a altura 3, é igual a = ' + area + '<br>');
+            document.writeln();
+            var str = 'Programação com JS'; 
+            if (b<h){
+                let d = a + b;
+                document.writeln('Valor da variável [d] é = ' + d);
+            }
+        </script>
+        <script src="" async defer> </script>
+    </body>
+
+
+    <body>
+        <h1>Linguagem JavaScript</h1>
+        <p>Utilizando document.write para gerar conteudo</p>
+        <script>
+            console.log('Escrevendo no console do navegador...');
+            for (var i = 0; i < 10; i++)
+                document.write('<h1>Texto gerado por funcao JavaScript </h1>');
+        </script>
+        <button type="button" onclick="window.alert('Obrigado!')">Clique aqui!</button>
+    </body>
+
+
+    <script>
+        alert("Hello World!");
+    </script>
+
+    <script>
+        nome = window.prompt("Digite seu nome:");
+        document.write(nome);
+    </script>
+
+    <script>
+        opcao = confirm("Deseja prosseguir?");
+        
+        if(opcao)
+            alert("Você clicou em OK");
+        else
+            alert("Você clicou em CANCELAR");
+    </script>
+</html>
