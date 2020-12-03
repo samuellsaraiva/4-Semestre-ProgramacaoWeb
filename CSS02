@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/02.css">
+    <meta charset="UTF-8">
+    <title> 02 CSS INCORPORADA </title>
+    <style>
+        .seletor xyz {
+            margin: 0;
+            padding: 0;
+            background-color: #4c00ff;
+            font-size: 18px;
+        }
+
+        .body {
+            color: white;
+            font-size: 16pt;
+            background-color: #3D3F40
+        }
+
+        .body1 {
+            color: black;
+            font-size: 16pt;
+            background-color: #EEFFFF;
+            font-family: "Times New Roman", Georgia, serif;
+        }
+
+        #sidebar {
+            color: #F00;
+        }
+
+        div#sidebar p {
+            color: #F0F;
+        }
+
+        h1,
+        h2,
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        p {
+            color: red;
+            /* this is a single-line comment */
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Arial, Verdana, Tahoma, sans-serif;
+        }
+
+
+        .body2 {
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            background-color: lightblue;
+        }
+
+        p {
+            background-color: #e0ffff;
+        }
+
+        div {
+            background-color: #b0c4de;
+        }
+
+        h1 {
+            font-size: 100px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 10px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-left: 1em;
+        }
+    </style>
+</head>
+<p>Exemplo de uso de uma folha de estilos CSS embutida no próprio documento </p>
+<p>A folha de estilos é inserida utilizando a tag HTML style </p>
+<p>A folha de estilos deve ser inserida dentro da seção de cabeçalho do documento (HEAD) </p>
+<p style="color: red;"> Definições CSS do tipo inline normalmente prevalecem </p>
+
+<div body=“background-color:blue; color: red; width:300px;height:200px;”>
+    <h1>Teste</h1>
+    <p> Ceub 1</p>
+    <p> Ceub 2</p>
+</div>
+
+<p> Parágrafo sem definição de estilos CSS</p>
+<p style="font-size: 20pt; color: blue">
+    Este é um parágrafo que utiliza as propriedades CSS
+    <em>font-size</em> e <em>color</em>. </p>
+
+
+<div id="sidebar">
+    <p class="descricao"> Texto exemplo. </p>
+</div>
+
+<p>Esta página possui a cor de fundo azul conforme valor declarado na regra CSS dentro do arquivo "estilo.css"</p>
+<p>O texto usado possui a cor branca.</p>
+
+<h1> TEXTO DE EXEMPLO </h1>
+<P> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi,! </P>
+<script src="" async defer></script>
+
+<h1>Definindo a cor de fundo de um elemento com CSS </h1>
+<div>
+    Este texto está dentro de um elemento <em>div</em>.
+    <p>Este parágrafo tem a sua própria cor de fundo. </p>
+    Este texto continua dentro do elemento <em>div</em>.
+</div>
+
+
+<h1> Cabeçalho h1 com margem esquerda de 1em </h1>
+<h2> Cabeçalho h2 com margem esquerda de 1em </h2>
+<h3> Cabeçalho h3 com margem esquerda de 1em </h3>
+
+</body>
+
+</html>
