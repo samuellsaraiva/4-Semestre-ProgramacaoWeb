@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title> 01 CSS VISÃO GERAL </title>
+    <style>
+        span#identificado {
+            background-color: DodgerBlue;
+        }
+
+        #identified {
+            background-color: skyblue;
+        }
+
+        /* este é um comentário*/
+        p {
+            font-size: 14px;
+            /* este é outro comentário*/
+            color: #000000;
+            font-family: Arial, Serif;
+        }
+
+        p.corum {
+            color: #000000
+        }
+
+        p.cordois {
+            color: #0000FF
+        }
+
+        .cortres {
+            color: #FFBB00
+        }
+
+        .textoVerdanaAzul {
+            color: blue;
+            font-family: verdana;
+        }
+
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        p.center {
+            text-align: center;
+            color: red;
+        }
+
+        p.large {
+            font-size: 3em;
+        }
+
+        a {
+            color: blue;
+        }
+
+        a.whitewine {
+            color: #FFBB00;
+        }
+
+        a.redwine {
+            color: #800000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span id="identificado">Aqui um span com um pouco de texto.</span>
+    <span>Aqui outro texto que não receberá o CSS.</span>
+
+    <div id="identified">This div has a special ID on it!</div>
+    <div>This is just a regular div.</div>
+
+    <p class="corum"> este parágrafo terá cor preta. </p>
+    <p class="cordois"> este parágrafo terá cor azul. </p>
+
+
+
+    <p>Uvas para vinho branco:</p>
+    <ul>
+        <li><a href="ri.htm" class="whitewine">Riesling</a></li>
+        <li><a href="pb.htm" class="whitewine">Pinot Blanc</a></li>
+    </ul>
+
+    <p>Uvas para vinho tinto:</p>
+    <ul>
+        <li><a href="cs.htm" class="redwine">Cabernet Sauvignon</a></li>
+        <li><a href="me.htm" class="redwine">Merlot</a></li>
+        <li><a href="pn.htm" class="redwine">Pinot Noir</a></li>
+    </ul>
+</body>
+
+<h2 class="cortres"> Este cabeçalho terá cor amarela. </h2>
+<p class="cortres"> Este parágrafo é amarelo. </p>
+
+
+<h1>Título normal</h1>
+<h1 class="textoVerdanaAzul">Título afetado pela classe!</h1>
+<p class="textoVerdanaAzul">Parágrafo afetado pela classe!</p>
+
+
+<h2>Elementos centralizados</h2>
+<p>Para centralizar um elemento de bloco (como div) horizontamente, utilize margin: auto;</p>
+<div class="center">
+    <p><b>Elemento centralizado horizontalmente</p>
+</div>
+
+
+<p class="center large">Parágrafo referenciando duas classes</p>
+
+</body>
+
+</html>
